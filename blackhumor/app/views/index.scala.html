@@ -1,7 +1,96 @@
-@(message: String)
+@(galeryAdder: Form[Application.GaleryAdder])
+<style>
 
-@main("Welcome to Play") {
-
-    @play20.welcome(message, style = "Java")
+ul li{
+margin:5px;
 
 }
+button{
+height: 50px;
+width: 250px;
+font-size: 30px;
+margin-top:20px;
+}
+</style>
+@helper.form(routes.Application.addGalery) {
+<ul style="list-style-type: none">
+<li>
+<input id ="galname" name="galname" placeholder="Name/Title">
+<input id ="galdescr" name="galdescr" placeholder="Description">
+</li>
+<li>
+
+<input id ="pic1" name="pic1" placeholder="Picture1">
+
+<input id ="descr1" name="descr1" placeholder="Description1">
+</li>
+<li>
+
+<input id ="pic2" name="pic2" placeholder="Picture2">
+
+<input id ="descr2" name="descr2" placeholder="Description2">
+</li>
+<li>
+
+<input id ="pic3" name="pic3" placeholder="Picture3">
+
+<input id ="descr3" name="descr3" placeholder="Description3">
+</li>
+<li>
+
+<input id ="pic4" name="pic4" placeholder="Picture4">
+
+<input id ="descr4" name="descr4" placeholder="Description4">
+</li>
+<li>
+
+<input id ="pic5" name="pic5" placeholder="Picture5">
+
+<input id ="descr5" name="descr5" placeholder="Description5">
+</li>
+<li>
+
+<input id ="pic6" name="pic6" placeholder="Picture6">
+
+<input id ="descr6" name="descr6" placeholder="Description6">
+</li>
+<li>
+
+<input id ="pic7" name="pic7" placeholder="Picture7">
+
+<input id ="descr7" name="descr7" placeholder="Description7">
+</li>
+<li>
+
+<input id ="pic8" name="pic8" placeholder="Picture8">
+
+<input id ="descr8" name="descr8" placeholder="Description8">
+</li>
+<li>
+
+<input id ="pic9" name="pic9" placeholder="Picture9">
+
+<input id ="descr9" name="descr9" placeholder="Description9">
+</li>
+
+<li>
+
+<input id ="pic10" name="pic10" placeholder="Picture10">
+
+<input id ="descr10" name="descr10" placeholder="Description10">
+</li>
+
+
+
+
+
+<li>
+<button type="submit"> add galery</button> </li>
+</ul>
+}
+
+
+
+
+
+
